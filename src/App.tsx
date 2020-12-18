@@ -1,6 +1,8 @@
 import React from 'react';
+import { hot } from 'react-hot-loader/root'
+
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -23,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default process.env.NODE_ENV === "development" ? hot(App) : App;
