@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Jrello",
+    "shortDesc": "[Personal Project] Trello Clone Application",
+    "desc": "[Personal Project] A Trello Clone Application made with Angular and NGRX and with no other external librairy",
+    "img": [
+      "/portfolio/jrello_1.png",
+      "/portfolio/jrello_2.png",
+      "/portfolio/jrello_3.png"
+    ],
+    "techs": ["Angular", "NGRX", "SASS"],
+    "platform": "pc",
+    "year": 2020,
+    "links": [
+      { "short": "jean-trello.web.app", "long": "https://jean-trello.web.app/" }
+    ],
+    "gitHub": "https://github.com/humblotj/jean-trello",
+    "isPersonal": true
+  },
+  {
+    "id": 2,
+    "name": "SpoAlmanac",
+    "shortDesc": "Sports betting simulation game",
+    "desc": "Project made with my former company 어썸코드.\nI supervised the frontend department.\nTeam of 6: 1 webdesigner, 2 publishers, 2 frontend developers, 1 backend develper.",
+    "img": ["/portfolio/jrello_preview1.png"],
+    "techs": ["Angular", "NGRX", "SASS", "Chart.js"],
+    "platform": "pc",
+    "year": 2020,
+    "links": [],
+    "isPersonal": false
+  },
+  {
+    "id": 3,
+    "name": "Subtitle Editor",
+    "shortDesc": "[Personal Project] YouTube subtitle editor",
+    "desc": "[Personal Project] An upgraded version of my previous work. Application for easily creating subtitles for YouTube videos. ",
+    "img": [
+      "/portfolio/subtitle_editor_1.png",
+      "/portfolio/subtitle_editor_2.png",
+      "/portfolio/subtitle_editor_3.png"
+    ],
+    "techs": [
+      "Angular",
+      "React",
+      "Redux",
+      "Wavesurfer.js",
+      "Video.js",
+      "Firebase"
+    ],
+    "platform": "pc",
+    "year": 2020,
+    "links": [
+      {
+        "short": "jean-subtitle-editor.web.app",
+        "long": "https://jean-subtitle-editor.web.app/"
+      }
+    ],
+    "gitHub": "https://github.com/humblotj/jean-subtitle-editor",
+    "isPersonal": true
+  },
+  {
+    "id": 4,
+    "name": "Mglish Player",
+    "shortDesc": "English learning player application",
+    "desc": "A player providing special learning subtitles for Youtube videos. I made alone the frontend part of the application from scratch.",
+    "img": [
+      "/portfolio/mglishplayer_1.png",
+      "/portfolio/mglishplayer_2.png",
+      "/portfolio/mglishplayer_3.png",
+      "/portfolio/mglishplayer_4.png",
+      "/portfolio/mglishplayer_5.png",
+      "/portfolio/mglishplayer_6.png"
+    ],
+    "techs": ["React Native", "Redux", "Firebase", "Node.js"],
+    "platform": "mobile",
+    "year": 2019,
+    "links": [
+      {
+        "short": "Android",
+        "long": "https://play.google.com/store/apps/details?id=com.mglish.mplayer"
+      },
+      {
+        "short": "iOS",
+        "long": "https://apps.apple.com/us/app/mglish-player/id1478529143"
+      }
+    ],
+    "isPersonal": false
+  }
+]

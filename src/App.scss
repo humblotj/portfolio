@@ -1,38 +1,109 @@
 .App {
-  text-align: center;
-}
+  max-width: 1170px;
+  margin: 0 auto;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .menu-toggle {
+    position: fixed;
+    left: -5px;
+    top: 0;
+    visibility: hidden;
+    padding: 20px;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    z-index: 9999;
+    cursor: pointer;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    i {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      width: 30px;
+      height: 2px;
+      color: #000;
+      font: bold 14px/0.4 Helvetica;
+      text-transform: uppercase;
+      text-indent: -55px;
+      background: #000;
+
+      &:before,
+      &:after {
+        content: "";
+        width: 30px;
+        height: 2px;
+        background: #000;
+        position: absolute;
+        left: 0;
+      }
+
+      &:before {
+        top: -7px;
+      }
+
+      &:after {
+        bottom: -7px;
+      }
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.main {
+  width: calc(100% - 300px);
+  float: right;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  header {
+    margin-bottom: 4em;
+    h2 {
+      position: relative;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      line-height: 1.8;
+    }
   }
-  to {
-    transform: rotate(360deg);
+}
+
+.menu-visible {
+  .menu-toggle {
+    left: 300px;
+
+    i {
+      background: 0 0;
+
+      &:before {
+        top: 0;
+        -webkit-transform: rotateZ(45deg);
+        -moz-transform: rotateZ(45deg);
+        -ms-transform: rotateZ(45deg);
+        -o-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+      }
+
+      &:after {
+        bottom: 0;
+        -webkit-transform: rotateZ(-45deg);
+        -moz-transform: rotateZ(-45deg);
+        -ms-transform: rotateZ(-45deg);
+        -o-transform: rotateZ(-45deg);
+        transform: rotateZ(-45deg);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .App {
+    .menu-toggle {
+      visibility: visible;
+    }
+  }
+
+  .main {
+    width: 100%;
   }
 }
