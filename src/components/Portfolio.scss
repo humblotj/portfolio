@@ -190,6 +190,21 @@
             object-fit: contain;
           }
         }
+
+        .control-dots .dot {
+          outline: 0;
+          transition: 0.25s ease-in;
+          box-shadow: none;
+          opacity: 1;
+          border: 1px solid rgba(0, 0, 0, 0.7);
+          width: 10px;
+          height: 10px;
+
+          &:hover,
+          &.selected {
+            border: 1px solid #2c98f0;
+          }
+        }
       }
 
       .carousel-slider {
