@@ -23,7 +23,7 @@
     "name": "SpoAlmanac",
     "shortDesc": "Sports betting simulation game",
     "desc": "Project made with my former company 어썸코드.\nI supervised the frontend department.\nTeam of 6: 1 webdesigner, 2 publishers, 2 frontend developers, 1 backend develper.",
-    "img": ["/portfolio/jrello_preview1.png"],
+    "img": [],
     "techs": ["Angular", "NGRX", "SASS", "Chart.js"],
     "platform": "pc",
     "year": 2020,

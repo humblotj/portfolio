@@ -80,7 +80,13 @@ class Portfolio extends Component<
                 className={work.platform + " img-wrap"}
                 onClick={() => this.toggleModal(work)}
               >
-                <img src={work.img[0]} alt="preview" />
+                {work.img.length ? (
+                  <img src={work.img[0]} alt="preview" />
+                ) : (
+                  <span className="not-released">
+                    Not officially released yet
+                  </span>
+                )}
               </div>
               <div className="item-info">
                 <h3 className="item-name">{work.name}</h3>
@@ -104,13 +110,20 @@ class Portfolio extends Component<
           <h2>{activeWork?.name}</h2>
           <button onClick={() => this.toggleModal(null)}></button>
           <div className="modal-main">
-            <Carousel showThumbs={false} showStatus={false}>
-              {activeWork?.img.map((i, index) => (
-                <div key={index}>
-                  <img src={i} alt="preview" />
-                </div>
-              ))}
-            </Carousel>
+            {activeWork?.img.length ? (
+              <Carousel showThumbs={false} showStatus={false}>
+                {activeWork?.img.map((i, index) => (
+                  <div key={index}>
+                    <img src={i} alt="preview" />
+                  </div>
+                ))}
+              </Carousel>
+            ) : (
+              <span className="not-released carousel-root">
+                Not officially released yet
+              </span>
+            )}
+
             <div className="project-info-container">
               <div>
                 <h3>Project Info:</h3>

@@ -108,7 +108,7 @@
   inset: 0px;
   background-color: rgba(0, 0, 0, 0.64);
   overflow-y: auto;
-  z-index: 11;
+  z-index: 12;
 }
 
 .modal {
@@ -274,6 +274,12 @@
       }
     }
   }
+}
+
+.not-released {
+  display: block;
+  margin: 120px 0;
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
