@@ -111,7 +111,11 @@ class Portfolio extends Component<
           <button onClick={() => this.toggleModal(null)}></button>
           <div className="modal-main">
             {activeWork?.img.length ? (
-              <Carousel showThumbs={false} showStatus={false}>
+              <Carousel
+                showThumbs={false}
+                showStatus={false}
+                dynamicHeight={true}
+              >
                 {activeWork?.img.map((i, index) => (
                   <div key={index}>
                     <img src={i} alt="preview" />

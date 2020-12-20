@@ -86,5 +86,27 @@
       }
     ],
     "isPersonal": false
+  },
+  {
+    "id": 5,
+    "name": "Otdeal",
+    "shortDesc": "Fashion e-commerce website",
+    "desc": "I worked on a few pages as a publisher intern. Vue.js Frontend with a Spring Boot Backend",
+    "img": [
+      "/portfolio/otdeal_1.png",
+      "/portfolio/otdeal_2.png",
+      "/portfolio/otdeal_3.png",
+      "/portfolio/otdeal_4.png"
+    ],
+    "techs": ["Vue.js", "Spring"],
+    "platform": "pc",
+    "year": 2018,
+    "links": [
+      {
+        "short": "www.otdeal.io/",
+        "long": "https://www.otdeal.io/"
+      }
+    ],
+    "isPersonal": false
   }
 ]
