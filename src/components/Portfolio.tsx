@@ -29,6 +29,8 @@ class Portfolio extends Component<
     this.state = { activeTab: "All", works: worksAll, activeWork: null };
   }
 
+  componentDidMount() {}
+
   changeTab = (activeTab: Tab) => {
     let works = worksAll;
     if (activeTab === "Works") {
@@ -116,6 +118,8 @@ class Portfolio extends Component<
                 showStatus={false}
                 dynamicHeight={true}
                 infiniteLoop={true}
+                useKeyboardArrows={true}
+                autoFocus={true}
               >
                 {activeWork?.img.map((i, index) => (
                   <div key={index}>
