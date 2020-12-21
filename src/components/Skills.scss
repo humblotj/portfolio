@@ -40,3 +40,9 @@
     }
   }
 }
+
+@media only screen and (max-width: 600px) {
+  dd {
+    margin-inline-start: 0px;
+  }
+}
