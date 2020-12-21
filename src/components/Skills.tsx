@@ -1,15 +1,14 @@
-import React, { Component, RefObject } from "react";
+import React, { Component } from "react";
 import "./Skills.scss";
 
 import skills from "../data/skills.json";
 import { ReactSVG } from "react-svg";
+import Element from "./Element";
 
-export default class Skills extends Component<{
-  refProp: RefObject<any>;
-}> {
+export default class Skills extends Component {
   render() {
     return (
-      <section ref={this.props.refProp} className="skills">
+      <Element name="skills" className="skills">
         <header>
           <h2>Skills</h2>
         </header>
@@ -63,7 +62,7 @@ export default class Skills extends Component<{
             </ol>
           </dd>
         </dl>
-      </section>
+      </Element>
     );
   }
 }

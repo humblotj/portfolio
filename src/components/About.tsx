@@ -1,12 +1,11 @@
-import React, { Component, RefObject } from "react";
+import React, { Component } from "react";
 import "./About.scss";
+import Element from "./Element";
 
-export default class About extends Component<{
-  refProp: RefObject<any>;
-}> {
+export default class About extends Component {
   render() {
     return (
-      <section className="about" ref={this.props.refProp}>
+      <Element name="about" className="about">
         <header>
           <h2>About</h2>
         </header>
@@ -21,7 +20,7 @@ export default class About extends Component<{
             to build their next big things.
           </p>
         </div>
-      </section>
+      </Element>
     );
   }
 }

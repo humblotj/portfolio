@@ -1,19 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component, RefObject } from "react";
+import React, { Component } from "react";
 import "./Sidebar.scss";
 import photo from "../assets/Photo.jpg";
 import { ReactComponent as EmailIcon } from "../assets/icons/email-outline.svg";
 import { ReactComponent as GitHubIcon } from "../assets/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icons/linkedin.svg";
-
+import { Link } from "react-scroll";
 export default class Sidebar extends Component<{
   showSidebar: boolean;
-  aboutRef: RefObject<any>;
-  skillsRef: RefObject<any>;
-  portfolioRef: RefObject<any>;
 }> {
   render() {
-    const { showSidebar, aboutRef, skillsRef, portfolioRef } = this.props;
+    const { showSidebar } = this.props;
     return (
       <aside className={showSidebar ? "active" : ""}>
         <div className="profile">
@@ -31,46 +28,24 @@ export default class Sidebar extends Component<{
         <nav>
           <ul>
             <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  event.preventDefault();
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: aboutRef.current.offsetTop,
-                  });
-                }}
-              >
+              <Link activeClass="active" to="about" spy={true} smooth={true}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  event.preventDefault();
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: skillsRef.current.offsetTop,
-                  });
-                }}
-              >
+              <Link activeClass="active" to="skills" spy={true} smooth={true}>
                 Skills
-              </a>
+              </Link>
             </li>
             <li>
-              <a
-                href="#"
-                onClick={(event) => {
-                  event.preventDefault();
-                  window.scrollTo({
-                    behavior: "smooth",
-                    top: portfolioRef.current.offsetTop,
-                  });
-                }}
+              <Link
+                activeClass="active"
+                to="portfolio"
+                spy={true}
+                smooth={true}
               >
                 Portfolio
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

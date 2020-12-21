@@ -1,6 +1,32 @@
 [
   {
-    "id": 1,
+    "id": 6,
+    "name": "Portfolio",
+    "shortDesc": "[Personal Project] My Personal Portfolio",
+    "desc": "Portfolio made with React",
+    "img": [
+      "/portfolio/portfolio_1.png",
+      "/portfolio/portfolio_2.png",
+      "/portfolio/portfolio_3.png",
+      "/portfolio/portfolio_4.png",
+      "/portfolio/portfolio_5.png",
+      "/portfolio/portfolio_6.png",
+      "/portfolio/portfolio_7.png"
+    ],
+    "techs": ["React", "TypeScript", "SASS"],
+    "platform": "pc",
+    "year": 2020,
+    "links": [
+      {
+        "short": "jean-humblot-portfolio.web.app/",
+        "long": "https://jean-humblot-portfolio.web.app/"
+      }
+    ],
+    "gitHub": "https://github.com/humblotj/portfolio",
+    "isPersonal": true
+  },
+  {
+    "id": 5,
     "name": "Jrello",
     "shortDesc": "[Personal Project] Trello Clone Application",
     "desc": "[Personal Project] A Trello Clone Application made with Angular and NGRX and with no other external librairy",
@@ -19,7 +45,7 @@
     "isPersonal": true
   },
   {
-    "id": 2,
+    "id": 4,
     "name": "SpoAlmanac",
     "shortDesc": "Sports betting simulation game",
     "desc": "Project made with my former company 어썸코드.\nI supervised the frontend department.\nTeam of 6: 1 webdesigner, 2 publishers, 2 frontend developers, 1 backend develper.",
@@ -61,7 +87,7 @@
     "isPersonal": true
   },
   {
-    "id": 4,
+    "id": 2,
     "name": "Mglish Player",
     "shortDesc": "English learning player application",
     "desc": "A player providing special learning subtitles for Youtube videos. I made alone the frontend part of the application from scratch.",
@@ -89,7 +115,7 @@
     "isPersonal": false
   },
   {
-    "id": 5,
+    "id": 1,
     "name": "Otdeal",
     "shortDesc": "Fashion e-commerce website",
     "desc": "I worked on a few pages as a publisher intern. Vue.js Frontend with a Spring Boot Backend",

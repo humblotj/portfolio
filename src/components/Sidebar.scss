@@ -99,7 +99,8 @@ aside {
             transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
           }
 
-          &:hover {
+          &:hover,
+          &.active {
             color: #000;
 
             &:after {
@@ -110,12 +111,6 @@ aside {
               -o-transform: scaleX(1);
               transform: scaleX(1);
             }
-          }
-        }
-
-        &.active {
-          a {
-            color: #2c98f0;
           }
         }
       }

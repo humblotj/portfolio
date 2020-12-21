@@ -1,5 +1,5 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component, RefObject } from "react";
+import React, { Component } from "react";
 import "./Portfolio.scss";
 // @ts-ignore
 import StackGrid from "react-stack-grid";
@@ -13,18 +13,19 @@ import worksAll from "../data/works.json";
 import { Work } from "../data/interface";
 
 import { ReactComponent as GitHubIcon } from "../assets/icons/github.svg";
+import Element from "./Element";
 
 Modal.setAppElement("#root");
 
 type Tab = "All" | "Works" | "Personal Projects";
 
 class Portfolio extends Component<
-  { size: { width: number }; refProp: RefObject<any> },
+  { size: { width: number } },
   { activeTab: Tab; works: Work[]; activeWork: Work | null }
 > {
   tabs: Tab[] = ["All", "Works", "Personal Projects"];
 
-  constructor(props: { size: { width: number }; refProp: RefObject<any> }) {
+  constructor(props: { size: { width: number } }) {
     super(props);
     this.state = { activeTab: "All", works: worksAll, activeWork: null };
   }
@@ -47,11 +48,10 @@ class Portfolio extends Component<
     const { activeTab, works, activeWork } = this.state;
     const {
       size: { width },
-      refProp,
     } = this.props;
 
     return (
-      <section ref={refProp} className="portfolio">
+      <Element name="portfolio" className="portfolio">
         <header>
           <h2>Portfolio</h2>
         </header>
@@ -180,7 +180,7 @@ class Portfolio extends Component<
             </div>
           </div>
         </Modal>
-      </section>
+      </Element>
     );
   }
 }
