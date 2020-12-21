@@ -115,6 +115,7 @@ class Portfolio extends Component<
                 showThumbs={false}
                 showStatus={false}
                 dynamicHeight={true}
+                infiniteLoop={true}
               >
                 {activeWork?.img.map((i, index) => (
                   <div key={index}>
