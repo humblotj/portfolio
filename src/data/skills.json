@@ -1,0 +1,72 @@
+[
+  {
+    "name": "Angular",
+    "path": "angular",
+    "type": "frontend"
+  },
+  {
+    "name": "React",
+    "path": "react",
+    "type": "frontend"
+  },
+  {
+    "name": "Redux",
+    "path": "redux",
+    "type": "frontend"
+  },
+  {
+    "name": "NgRx",
+    "path": "ngrx",
+    "type": "frontend"
+  },
+  {
+    "name": "RxJS",
+    "path": "rxjs",
+    "type": "frontend"
+  },
+  {
+    "name": "Vue.js",
+    "path": "vuejs",
+    "type": "frontend"
+  },
+  {
+    "name": "Jest",
+    "path": "jest",
+    "type": "frontend"
+  },
+  {
+    "name": "Sass",
+    "path": "sass",
+    "type": "frontend"
+  },
+  {
+    "name": "Firebase",
+    "path": "firebase",
+    "type": "backend"
+  },
+  {
+    "name": "Node.js",
+    "path": "nodejs",
+    "type": "backend"
+  },
+  {
+    "name": "mongoDB",
+    "path": "mongodb",
+    "type": "backend"
+  },
+  {
+    "name": "TypeScript",
+    "path": "typescript",
+    "type": "other"
+  },
+  {
+    "name": "Java",
+    "path": "java",
+    "type": "other"
+  },
+  {
+    "name": "Git",
+    "path": "git",
+    "type": "other"
+  }
+]

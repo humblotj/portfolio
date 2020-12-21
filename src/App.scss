@@ -2,6 +2,10 @@
   max-width: 1170px;
   margin: 0 auto;
 
+  section {
+    padding: 60px 37.5px 0;
+  }
+
   .menu-toggle {
     position: fixed;
     left: -5px;
@@ -50,6 +54,7 @@
 .main {
   width: calc(100% - 300px);
   float: right;
+  padding-bottom: 135px;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;

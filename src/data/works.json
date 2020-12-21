@@ -9,7 +9,7 @@
       "/portfolio/jrello_2.png",
       "/portfolio/jrello_3.png"
     ],
-    "techs": ["Angular", "NGRX", "SASS"],
+    "techs": ["Angular", "NgRx", "SASS"],
     "platform": "pc",
     "year": 2020,
     "links": [
@@ -24,7 +24,7 @@
     "shortDesc": "Sports betting simulation game",
     "desc": "Project made with my former company 어썸코드.\nI supervised the frontend department.\nTeam of 6: 1 webdesigner, 2 publishers, 2 frontend developers, 1 backend develper.",
     "img": [],
-    "techs": ["Angular", "NGRX", "SASS", "Chart.js"],
+    "techs": ["Angular", "NgRx", "SASS", "Chart.js"],
     "platform": "pc",
     "year": 2020,
     "links": [],

@@ -11,3 +11,9 @@ export interface Work {
     gitHub?: string,
     isPersonal: boolean
 }
+
+export interface Skill {
+    name: string,
+    path: string,
+    type: "frontend" | "backend" | "other"
+}

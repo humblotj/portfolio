@@ -21,6 +21,7 @@
     "react-scripts": "4.0.1",
     "react-sizeme": "^2.6.12",
     "react-stack-grid": "^0.7.1",
+    "react-svg": "^11.2.1",
     "typescript": "^4.0.3",
     "web-vitals": "^0.2.4",
     "workbox-background-sync": "^5.1.3",
