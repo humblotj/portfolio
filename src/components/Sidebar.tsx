@@ -1,15 +1,21 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { Component } from "react";
+import React, { Component, RefObject } from "react";
 import "./Sidebar.scss";
 import photo from "../assets/Photo.jpg";
 import { ReactComponent as EmailIcon } from "../assets/icons/email-outline.svg";
 import { ReactComponent as GitHubIcon } from "../assets/icons/github.svg";
 import { ReactComponent as LinkedInIcon } from "../assets/icons/linkedin.svg";
 
-export default class Sidebar extends Component<{ showSidebar: boolean }> {
+export default class Sidebar extends Component<{
+  showSidebar: boolean;
+  aboutRef: RefObject<any>;
+  skillsRef: RefObject<any>;
+  portfolioRef: RefObject<any>;
+}> {
   render() {
+    const { showSidebar, aboutRef, skillsRef, portfolioRef } = this.props;
     return (
-      <aside className={this.props.showSidebar ? "active" : ""}>
+      <aside className={showSidebar ? "active" : ""}>
         <div className="profile">
           <img src={photo} alt="" />
           <h1>Jean Humblot</h1>
@@ -25,13 +31,46 @@ export default class Sidebar extends Component<{ showSidebar: boolean }> {
         <nav>
           <ul>
             <li>
-              <a href="#">About</a>
+              <a
+                href="#"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: aboutRef.current.offsetTop,
+                  });
+                }}
+              >
+                About
+              </a>
             </li>
             <li>
-              <a href="#">Skills</a>
+              <a
+                href="#"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: skillsRef.current.offsetTop,
+                  });
+                }}
+              >
+                Skills
+              </a>
             </li>
             <li>
-              <a href="#">Portfolio</a>
+              <a
+                href="#"
+                onClick={(event) => {
+                  event.preventDefault();
+                  window.scrollTo({
+                    behavior: "smooth",
+                    top: portfolioRef.current.offsetTop,
+                  });
+                }}
+              >
+                Portfolio
+              </a>
             </li>
           </ul>
         </nav>

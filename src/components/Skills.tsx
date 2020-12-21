@@ -1,13 +1,15 @@
-import React, { Component } from "react";
+import React, { Component, RefObject } from "react";
 import "./Skills.scss";
 
 import skills from "../data/skills.json";
 import { ReactSVG } from "react-svg";
 
-export default class Skills extends Component {
+export default class Skills extends Component<{
+  refProp: RefObject<any>;
+}> {
   render() {
     return (
-      <section className="skills">
+      <section ref={this.props.refProp} className="skills">
         <header>
           <h2>Skills</h2>
         </header>
