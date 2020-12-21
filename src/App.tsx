@@ -11,7 +11,7 @@ import Portfolio from "./components/Portfolio";
 function App() {
   const [showSidebar, setSidebar] = useState(false);
 
-  const toggleSidebar = () => setSidebar(!showSidebar);
+  const toggleSidebar = () => setSidebar((prevShowSidebar) => !prevShowSidebar);
 
   const closeSidebar = (event: React.MouseEvent<HTMLElement>) => {
     if (showSidebar) {
