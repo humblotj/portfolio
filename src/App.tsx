@@ -38,6 +38,9 @@ function App() {
         <About></About>
         <Skills></Skills>
         <Portfolio></Portfolio>
+        <div className="footer">
+          <p>© 2020 Jean Humblot</p>
+        </div>
       </div>
     </div>
   );

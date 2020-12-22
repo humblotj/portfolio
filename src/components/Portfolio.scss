@@ -1,4 +1,6 @@
 .portfolio {
+  padding-bottom: 100px;
+
   .tabs {
     margin-bottom: 20px;
 
@@ -296,14 +298,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .portfolio {
-    padding: 20px 10px;
-
-    header {
-      margin-bottom: 20px;
-    }
-  }
-
   .modal {
     .modal-main {
       -webkit-box-direction: reverse;

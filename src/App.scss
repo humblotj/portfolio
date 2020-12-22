@@ -4,6 +4,10 @@
 
   section {
     padding: 60px 37.5px 0;
+
+    &:last-of-type {
+      padding-bottom: 60px;
+    }
   }
 
   .menu-toggle {
@@ -53,7 +57,6 @@
 
 .main {
   width: calc(100% - 300px);
-  padding-bottom: 135px;
   float: right;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
@@ -70,6 +73,10 @@
       letter-spacing: 5px;
       line-height: 1.8;
     }
+  }
+
+  .footer {
+    text-align: center;
   }
 }
 
@@ -110,5 +117,21 @@
 
   .main {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    section {
+      padding: 50px 25px 0;
+
+      &:last-of-type {
+        padding-bottom: 50px;
+      }
+
+      header {
+        margin-bottom: 20px;
+      }
+    }
   }
 }
