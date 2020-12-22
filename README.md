@@ -2,4 +2,4 @@
 
 My portfolio with React/TypeScript
 
-https://jean-humblot-portfolio.web.app
+https://jean-humblot.web.app
