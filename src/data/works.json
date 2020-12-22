@@ -30,7 +30,7 @@
     "id": 5,
     "name": "Jrello",
     "shortDesc": "[Personal Project] Trello Clone Application",
-    "desc": "[Personal Project] A Trello Clone Application made with Angular and NGRX and with no other external librairy",
+    "desc": "[Personal Project] A Trello Clone Application made with Angular, NGRX and no other external librairy",
     "img": [
       "/portfolio/jrello_1.png",
       "/portfolio/jrello_2.png",
