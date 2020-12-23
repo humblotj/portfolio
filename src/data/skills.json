@@ -10,6 +10,11 @@
     "type": "frontend"
   },
   {
+    "name": "React Native",
+    "path": "react",
+    "type": "frontend"
+  },
+  {
     "name": "Redux",
     "path": "redux",
     "type": "frontend"
