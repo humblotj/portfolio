@@ -35,7 +35,9 @@
       "/portfolio/jrello_1.png",
       "/portfolio/jrello_2.png",
       "/portfolio/jrello_3.png",
-      "/portfolio/jrello_4.png"
+      "/portfolio/jrello_4.png",
+      "/portfolio/jrello_5.png",
+      "/portfolio/jrello_6.png"
     ],
     "techs": ["Angular", "NgRx", "SASS"],
     "platform": "pc",
