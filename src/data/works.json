@@ -23,7 +23,11 @@
         "long": "https://jean-humblot.web.app/"
       }
     ],
-    "gitHub": "https://github.com/humblotj/portfolio",
+    "gitHub": [
+      {
+        "url": "https://github.com/humblotj/portfolio"
+      }
+    ],
     "isPersonal": true
   },
   {
@@ -45,7 +49,11 @@
     "links": [
       { "short": "jean-trello.web.app", "long": "https://jean-trello.web.app/" }
     ],
-    "gitHub": "https://github.com/humblotj/jean-trello",
+    "gitHub": [
+      {
+        "url": "https://github.com/humblotj/jean-trello"
+      }
+    ],
     "isPersonal": true
   },
   {
@@ -87,7 +95,16 @@
         "long": "https://jean-subtitle-editor.web.app/"
       }
     ],
-    "gitHub": "https://github.com/humblotj/jean-subtitle-editor",
+    "gitHub": [
+      {
+        "desc": "Angular Version",
+        "url": "https://github.com/humblotj/jean-subtitle-editor"
+      },
+      {
+        "desc": "React Version",
+        "url": "https://github.com/humblotj/jean-subtitle-editor-react-redux"
+      }
+    ],
     "isPersonal": true
   },
   {

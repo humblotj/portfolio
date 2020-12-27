@@ -282,8 +282,15 @@
             }
           }
 
-          .gitHub-link {
-            color: rgba(0, 0, 0, 0.7);
+          .git-links {
+            display: flex;
+
+            li {
+              display: inline;
+              .gitHub-link {
+                color: rgba(0, 0, 0, 0.7);
+              }
+            }
           }
         }
       }

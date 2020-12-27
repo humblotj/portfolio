@@ -5,6 +5,7 @@ import "./Portfolio.scss";
 import StackGrid from "react-stack-grid";
 import sizeMe from "react-sizeme";
 import Modal from "react-modal";
+import ReactTooltip from "react-tooltip";
 
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
@@ -168,11 +169,24 @@ class Portfolio extends Component<
                         ))
                       : "Not Available"}
                   </li>
-                  {activeWork?.gitHub && (
+                  {activeWork?.gitHub?.length && (
                     <li>
-                      <a href={activeWork.gitHub} className="gitHub-link">
-                        <GitHubIcon />
-                      </a>
+                      <ol className="git-links">
+                        {activeWork.gitHub.map((link) => (
+                          <li>
+                            <a href={link.url} className="gitHub-link">
+                              <GitHubIcon data-tip={link?.desc} />
+                              {link?.desc && (
+                                <ReactTooltip
+                                  place="bottom"
+                                  type="info"
+                                  effect="solid"
+                                />
+                              )}
+                            </a>
+                          </li>
+                        ))}
+                      </ol>
                     </li>
                   )}
                 </ul>

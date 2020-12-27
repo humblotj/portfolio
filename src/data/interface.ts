@@ -8,7 +8,7 @@ export interface Work {
     platform: string,
     year: number,
     links: { short: string, long: string }[],
-    gitHub?: string,
+    gitHub?: { desc?: string, url: string }[],
     isPersonal: boolean
 }
 
