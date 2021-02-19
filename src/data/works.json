@@ -61,11 +61,14 @@
     "name": "SpoAlmanac",
     "shortDesc": "Sports betting simulation game",
     "desc": "Project made with my former company 어썸코드.\nI supervised the frontend department.\nTeam of 6: 1 webdesigner, 2 publishers, 2 frontend developers, 1 backend develper.",
-    "img": [],
+    "img": ["/portfolio/spoalmanac_1.png"],
     "techs": ["Angular", "NgRx", "SASS", "Chart.js"],
     "platform": "pc",
     "year": 2020,
-    "links": [],
+    "links": [ {
+      "short": "spoalmanac.com",
+      "long": "http://www.spoalmanac.com/"
+    }],
     "isPersonal": false
   },
   {

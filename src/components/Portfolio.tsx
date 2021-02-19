@@ -111,6 +111,7 @@ class Portfolio extends Component<
           overlayClassName="dark-overlay"
           className="modal"
           isOpen={!!activeWork}
+          closeTimeoutMS={75}
           onRequestClose={() => this.toggleModal(null)}
         >
           <h2>{activeWork?.name}</h2>
